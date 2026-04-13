@@ -1,0 +1,131 @@
+/* CSS written by Jonathan Daniel */
+
+/* GLOBAL STYLES (MOBILE FIRST) */
+body {
+    display:grid;
+    grid-gap:30px;
+    grid-template-columns:1fr;
+    background-color:darkgray;
+}
+header {
+    grid-column:1/-1;
+    text-align:center;
+}
+header, footer {
+    padding:15px 20px;
+    background-color:darkorange;
+    color:black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px gray;
+}
+section {
+    max-width:1365px;
+    margin:0 auto;
+}
+
+
+/* NAVIGATION */
+nav a {
+    background-color:orange;
+    color:black;
+    padding:1em 2em;
+    text-decoration:none;
+    font-family:Arial, sans-serif;
+    font-size: 1em;
+    font-weight:normal;
+    border-radius:8px;
+    box-shadow: 4px 4px 5px gray;
+}
+nav a:hover {
+    background-color:black;
+    color:orange;
+    box-shadow:0 0 10px 5px white;
+}
+nav ul {
+    display:flex;
+    justify-content:center;
+    padding:0;
+    list-style:none;
+}
+nav ul li {
+    padding:12px 16px
+}
+@media screen and (max-width: 560px){
+    nav ul {
+        flex-direction:column;
+        align-items:center;
+        gap: 1rem;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    grid-column:1/-1;
+    text-align:center;
+}
+
+/* FLEX-DIV CLASSES */
+.flex-div {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    padding: 1rem;
+    gap:1rem;
+    text-align:center;
+    border-radius:8px;
+}
+.flex-div > div {
+    border: 1px solid darkorange;
+    border-radius:8px;
+    box-shadow: 4px 4px 5px gray;
+    background-color:black;
+    max-width:400px;
+    padding:15px;
+}
+.flex-div > div h3 {
+    color:orange;
+}
+.flex-div > div p {
+    color:white;
+    text-align:left;
+}
+@media screen and (max-width: 1365px){
+    .flex-div > div {
+        max-width:280px;
+    }
+    img {
+        max-width:260px;
+    }
+}
+@media screen and (min-width: 1365px){
+    img {
+        max-width:380px;
+    }
+}
+
+/* FONTS */
+h1 {
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:2.5em;
+}
+h2 {
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 2em;
+}
+h3 {
+    font-family:Arial, sans-serif;
+    font-size:1.5em;
+}
+p {
+    font-family:Verdana, sans-serif;
+}
+
+/* IMAGES */
+img {
+    border-radius:20px;
+    height:auto;
+    padding:10px;
+}
